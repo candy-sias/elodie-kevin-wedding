@@ -58,6 +58,7 @@ function CoupleStorySection() {
         </div>
 
       </div>
+      
     </section>
   );
 }
