@@ -71,7 +71,7 @@ function EventDetailsSection() {
               text-[#5C4033]
             "
           >
-            Samedi 15 Août 2026
+            Samedi 22 Août 2026
           </h3>
 
           {/* Heure */}

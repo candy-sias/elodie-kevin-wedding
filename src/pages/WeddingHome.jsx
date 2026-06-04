@@ -5,6 +5,7 @@ import CoupleStorySection from "../components/wedding/CoupleStorySection";
 import ProgramSection from "../components/wedding/ProgramSection";
 import DressCodeSection from "../components/wedding/DressCodeSection";
 import GiftSection from "../components/wedding/GiftSection";
+import TestSupabase from "../components/wedding/TestSupabase";
 
 function WeddingHome() {
     return (
@@ -27,7 +28,9 @@ function WeddingHome() {
 
             <RingsDivider />
 
-            <GiftSection /> 
+            <GiftSection />
+
+            <TestSupabase /> 
 
         </main>
     );
