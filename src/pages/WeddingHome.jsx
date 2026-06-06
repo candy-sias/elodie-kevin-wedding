@@ -1,3 +1,7 @@
+import { useState } from "react";
+import IntroVideo from "../components/IntroVideo";
+
+
 import HeroSection from "../components/wedding/HeroSection";
 import RingsDivider from "../components/wedding/RingsDivider";
 import EventDetailsSection from "../components/wedding/EventDetailsSection";
@@ -9,6 +13,17 @@ import RSVPSection from "../components/wedding/RSVPSection";
 import DeveloperFooter from "../components/DeveloperFooter";
 
 function WeddingHome() {
+    const [phase, setPhase] = useState("intro");
+
+    if (phase !== "wedding") {
+        return (
+            <IntroVideo
+                phase={phase}
+                setPhase={setPhase}
+            />
+        );
+    }
+
     return (
         <main className="bg-[#F5EBDD] text-[#5C4033]">
             <HeroSection />
