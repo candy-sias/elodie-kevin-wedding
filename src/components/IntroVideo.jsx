@@ -17,7 +17,7 @@ function IntroVideo({ phase, setPhase }) {
 
       <video
         ref={videoRef}
-        className="h-full w-full object-cover"
+        className="h-full w-full object-contain"
         playsInline
         preload="auto"
         onEnded={() => setPhase("wedding")}
