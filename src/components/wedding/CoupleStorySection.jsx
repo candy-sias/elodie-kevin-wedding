@@ -1,22 +1,11 @@
+import CoupleStory from "./CoupleStory";
+
 function CoupleStorySection() {
   return (
     <section className="px-6 py-10">
       <div className="max-w-[768px] mx-auto">
 
-        <img
-          src="./src/assets/images/couple-story.jpg"
-          alt="Elodie et Kevin"
-          className="
-          mb-8
-          h-full
-          w-full
-          rounded-full
-          object-cover
-          border-4
-          border-[#C9A86A]
-          shadow-xl
-        "
-        />
+        <CoupleStory />
 
         <div className="mt-16 text-center">
 

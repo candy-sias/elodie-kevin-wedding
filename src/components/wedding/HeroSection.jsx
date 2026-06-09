@@ -1,6 +1,7 @@
 import Rings from "./Rings";
 import { Flower } from "lucide-react";
 import '../../index.css'
+import CoupleHero from "./CoupleHero";
 
 
 function HeroSection() {
@@ -77,23 +78,8 @@ function HeroSection() {
 
                 {/* Photo */}
 
+                <CoupleHero />
 
-                <img
-                    src="./src/assets/images/couple-hero.jpg"
-                    alt="Elodie et Kevin"
-                    className="
-                        fade-up
-                        delay-2
-          mb-8
-          h-full
-          w-full
-          rounded-full
-          object-cover
-          border-4
-          border-[#C9A86A]
-          shadow-xl
-        "
-                />
 
                 {/* Noms */}
 
