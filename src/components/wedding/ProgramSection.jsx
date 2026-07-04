@@ -12,47 +12,47 @@ import {
 
 const events = [
   {
-    time: "18h00",
+    time: "19h00",
     title: "Accueil & Installation",
     icon: DoorOpen,
   },
   {
-    time: "18h30",
+    time: "19h30",
     title: "Ouverture de la Célébration",
     icon: HeartHandshake,
   },
   {
-    time: "18h45",
+    time: "19h45",
     title: "Entrée des Mariés",
     icon: Crown,
   },
   {
-    time: "19h00",
+    time: "20h00",
     title: "Présentation des Mariés",
     icon: Users,
   },
   {
-    time: "19h30",
+    time: "20h30",
     title: "Première Danse",
     icon: Music2,
   },
   {
-    time: "20h00",
+    time: "21h00",
     title: "Dîner & Partage",
     icon: Utensils,
   },
   {
-    time: "21h30",
+    time: "22h30",
     title: "Lancer du Bouquet",
     icon: Flower2,
   },
   {
-    time: "22h00",
+    time: "23h00",
     title: "Ouverture de la Piste",
     icon: PartyPopper,
   },
   {
-    time: "02h00",
+    time: "03h00",
     title: "Clôture de la Soirée",
     icon: MoonStar,
   },

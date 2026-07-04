@@ -18,7 +18,7 @@ function EventDetailsSection() {
           mx-auto
         "
       >
-        
+
 
         <h2
           className="
@@ -104,7 +104,7 @@ function EventDetailsSection() {
               text-[#5C4033]
             "
           >
-            18h00
+            19h00
           </h3>
 
           {/* Lieu */}
@@ -119,35 +119,20 @@ function EventDetailsSection() {
             "
           />
 
-          <p
-            className="
-              uppercase
-              tracking-[0.3em]
-              text-[#8B6F5A]
-              text-sm
-            "
-          >
+          <p className="uppercase tracking-[0.3em] text-[#8B6F5A] text-sm">
             Lieu
           </p>
 
-          <h3
-            className="
-              mt-2
-              text-2xl
-              text-[#5C4033]
-            "
-          >
-            Jardin des Roses
+          <h3 className="mt-2 text-2xl text-[#5C4033]">
+            Espace Kalongo
           </h3>
 
-          <p
-            className="
-              mt-2
-              text-[#6D5545]
-            "
-          >
-            Kinshasa
-          </p>
+          <div className="mt-4 text-[#6D5545] leading-7">
+            <p>Quartier GB</p>
+            <p>Référence : Mino Congo</p>
+            <p>Avenue Kalongo n° 5B</p>
+            <p>Kinshasa, RDC</p>
+          </div>
         </div>
       </div>
     </section>
