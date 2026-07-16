@@ -25,7 +25,7 @@ function WeddingHome() {
     }
 
     return (
-        <main className="bg-[#F5EBDD] text-[#5C4033]">
+        <main className="bg-[#081728] text-[#5C4033]">
             <HeroSection />
 
             <RingsDivider />

@@ -25,7 +25,7 @@ function EventDetailsSection() {
             text-center
             text-3xl
             mb-8
-            text-[#5C4033]
+            text-[#F8F6F2]
           "
         >
           Date & Lieu
@@ -34,12 +34,11 @@ function EventDetailsSection() {
         <div
           className="
             rounded-[2rem]
-            bg-white
-            shadow-lg
             p-10
             border
-            border-[#E8D8C6]
+            border-[#D4AF37]/30
             text-center
+            shadow-[0_10px_40px_rgba(0,0,0,0.25)]
           "
         >
           {/* Date */}
@@ -57,7 +56,7 @@ function EventDetailsSection() {
             className="
               uppercase
               tracking-[0.3em]
-              text-[#8B6F5A]
+              text-[#FFFFFF]
               text-sm
             "
           >
@@ -68,7 +67,7 @@ function EventDetailsSection() {
             className="
               mt-2
               text-2xl
-              text-[#5C4033]
+              text-[#E9D8A6]
             "
           >
             Samedi 22 Août 2026
@@ -90,7 +89,7 @@ function EventDetailsSection() {
             className="
               uppercase
               tracking-[0.3em]
-              text-[#8B6F5A]
+              text-[#FFFFFF]
               text-sm
             "
           >
@@ -101,7 +100,7 @@ function EventDetailsSection() {
             className="
               mt-2
               text-2xl
-              text-[#5C4033]
+              text-[#E9D8A6]
             "
           >
             19h00
@@ -119,15 +118,15 @@ function EventDetailsSection() {
             "
           />
 
-          <p className="uppercase tracking-[0.3em] text-[#8B6F5A] text-sm">
+          <p className="uppercase tracking-[0.3em] text-[#FFFFFF] text-sm">
             Lieu
           </p>
 
-          <h3 className="mt-2 text-2xl text-[#5C4033]">
+          <h3 className="mt-2 text-2xl text-[#E9D8A6]">
             Espace Kalongo
           </h3>
 
-          <div className="mt-4 text-[#6D5545] leading-7">
+          <div className="mt-4 text-[#D7DDE8] leading-7">
             <p>Quartier GB</p>
             <p>Référence : Mino Congo</p>
             <p>Avenue Kalongo n° 5B</p>

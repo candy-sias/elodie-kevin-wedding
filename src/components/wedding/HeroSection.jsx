@@ -21,31 +21,7 @@ function HeroSection() {
                     text-center
                     overflow-hidden
                 "
-            >
-                {/* Décor floral */}
-
-                <Flower
-                    size={40}
-                    className="
-                        absolute
-                        top-4
-                        left-4
-                        text-[#5C4033]
-                        opacity-20
-                    "
-                />
-
-                <Flower
-                    size={40}
-                    className="
-                        absolute
-                        top-4
-                        right-4
-                        text-[#5C4033]
-                        opacity-20
-                    "
-                />
-
+            > 
                 {/* Alliances */}
 
                 <div
@@ -53,7 +29,7 @@ function HeroSection() {
                         fade-up
                         mb-4
                         mt-10
-                        text-[#C9A86A]
+                        text-[#D4AF37]
                     "
                 >
                     <Rings />
@@ -68,8 +44,8 @@ function HeroSection() {
                         mb-6
                         text-sm
                         uppercase
-                        tracking-[0.4em]
-                        text-[#8B6F5A]
+                        tracking-[0.5em]
+                        text-[#E9D8A6]
                         title
                     "
                 >
@@ -83,13 +59,13 @@ function HeroSection() {
 
                 {/* Noms */}
 
-                <div className="fade-up delay-3">
+                <div className="fade-up delay-3 py-5">
                     <h1
                         className="
                             text-7xl
                             md:text-8xl
                             love
-                            text-[#5C4033]
+                            text-[#F8F6F2]
                         "
                     >
                         Élodie
@@ -102,7 +78,7 @@ function HeroSection() {
                             text-7xl
                             md:text-8xl
                             love
-                            text-[#C9A86A]
+                            text-[#D4AF37]
                         "
                     >
                         &
@@ -113,7 +89,7 @@ function HeroSection() {
                             text-7xl
                             md:text-8xl
                             love
-                            text-[#5C4033]
+                            text-[#F8F6F2]
                         "
                     >
                         Kevin
@@ -129,7 +105,7 @@ function HeroSection() {
                         mt-9
                         text-3xl
                         leading-relaxed
-                        text-[#6D5545]
+                        text-[#E9E4DA]
                     "
                 >
                     Cher(e) Invité(e)
@@ -143,7 +119,7 @@ function HeroSection() {
                         max-w-lg
                         text-lg
                         leading-relaxed
-                        text-[#6D5545]
+                        text-[#E9E4DA]
                     "
                 >
                     Nous avons la joie de vous convier à la célébration de notre union.

@@ -12,7 +12,7 @@ function CoupleStorySection() {
           <h2
             className="
               text-4xl
-              text-[#5C4033]
+              text-[#F8F6F2]
               mb-8
               love
             "
@@ -25,7 +25,7 @@ function CoupleStorySection() {
               max-w-2xl
               mx-auto
               space-y-6
-              text-[#6D5545]
+              text-[#D7DDE8]
               leading-relaxed
               text-lg
             "

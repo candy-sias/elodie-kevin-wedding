@@ -71,13 +71,13 @@ function ProgramSection() {
               text-sm
               uppercase
               tracking-[0.35em]
-              text-[#8B6F5A]
+              text-[#E9D8A6]
             "
           >
             La soirée
           </p>
 
-          <h2 className="text-3xl text-[#5C4033]">
+          <h2 className="text-3xl text-[#F8F6F2]">
             Programme
           </h2>
         </div>
@@ -94,7 +94,7 @@ function ProgramSection() {
               top-0
               bottom-0
               w-[2px]
-              bg-[#C9A86A]/30
+              bg-gradient-to-b from-transparent via-[#D4AF37] to-transparent
             "
           />
 
@@ -123,16 +123,16 @@ function ProgramSection() {
                     shrink-0
                     items-center
                     justify-center
-                    rounded-full
-                    border-2
-                    border-[#C9A86A]
-                    bg-[#FFF9F2]
-                    shadow-sm
+                    rounded-2xl
+                    border
+                  bg-[#0F2746]
+                  border-[#D4AF37]
+                    shadow-[0_0_20px_rgba(212,175,55,0.18)]
                   "
                 >
                   <Icon
                     size={20}
-                    className="text-[#C9A86A]"
+                    className="text-[#D4AF37]"
                   />
                 </div>
 
@@ -142,22 +142,25 @@ function ProgramSection() {
                   className="
                     flex-1
                     rounded-[1.5rem]
-                    bg-[#FFF9F2]
+                    border
+                    border-[#D4AF37]/20
                     p-5
-                    shadow-md
+                    shadow-[0_15px_35px_rgba(0,0,0,.25)]
                     transition-all
                     duration-300
                     hover:-translate-y-1
-                    hover:shadow-xl
+                    hover:border-[#D4AF37]/40
+                    hover:shadow-[0_20px_50px_rgba(0,0,0,.35)]
                   "
                 >
                   <p
                     className="
                       mb-1
                       text-sm
-                      font-medium
+                      font-semibold
                       tracking-widest
-                      text-[#C9A86A]
+                      uppercase
+                      text-[#D4AF37]
                     "
                   >
                     {event.time}
@@ -166,7 +169,7 @@ function ProgramSection() {
                   <h3
                     className="
                       text-lg
-                      text-[#5C4033]
+                      text-[#F8F6F2]
                     "
                   >
                     {event.title}
@@ -179,15 +182,14 @@ function ProgramSection() {
 
         {/* Footer */}
 
-        <div className="mt-16 text-center">
-          <p
-            className="
-              italic
-              text-[#8B6F5A]
-            "
-          >
+        <div className="mt-20 text-center">
+
+          <div className="mx-auto mb-8 h-px w-36 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent"/>
+
+          <p className="text-[#E9D8A6] leading-8">
             Nous avons hâte de partager cette soirée exceptionnelle avec vous.
           </p>
+
         </div>
       </div>
     </section>

@@ -149,7 +149,7 @@ function RSVPSection() {
             className="
               mb-4
               text-3xl
-              text-[#5C4033]
+              text-[#F8F6F2]
             "
           >
             RSVP
@@ -159,8 +159,8 @@ function RSVPSection() {
             className="
               mx-auto
               max-w-md
-              leading-relaxed
-              text-[#6D5545]
+              leading-8
+              text-[#D7DDE8]
             "
           >
             Merci de nous confirmer votre présence afin
@@ -176,17 +176,15 @@ function RSVPSection() {
           <div
             className="
       rounded-[2rem]
-      bg-[#FFF9F2]
       p-10
       text-center
-      shadow-lg
     "
           >
             <h3
               className="
         mb-8
         text-2xl
-        text-[#5C4033]
+        text-[#F8F6F2]
       "
             >
               Merci pour votre réponse
@@ -200,7 +198,9 @@ function RSVPSection() {
                   className="
     w-[340px]
     rounded-[32px]
-    bg-[#5B3A29]
+    bg-[#081728]
+    border
+    border-[#D4AF37]/20
     p-8
     text-center
     shadow-xl
@@ -216,7 +216,7 @@ function RSVPSection() {
                   >
                     <Heart
                       size={18}
-                      className="text-[#f8efe8ab]"
+                      className="text-[#f8e8eaab]"
                     />
 
                   </div>
@@ -224,7 +224,7 @@ function RSVPSection() {
                   <h3
                     className="
       text-3xl
-      text-[#FFF8F0]
+      text-[#D4AF37]
       love
     "
                   >
@@ -259,7 +259,7 @@ function RSVPSection() {
                   <p
                     className="
       text-lg
-      text-[#FFF8F0]
+      text-[#D4AF37]
     "
                   >
                     {guest.fullname}
@@ -270,7 +270,7 @@ function RSVPSection() {
       mt-4
       text-sm
       leading-relaxed
-      text-[#EBD8C8]
+      text-[#c8d3eb]
     "
                   >
                     Présentez cette invitation
@@ -289,7 +289,7 @@ function RSVPSection() {
                   <p
                     className="
       text-md
-      text-[#6D5545]
+      text-[#F8F6F2]
     "
                   >
                     Présentez ce QR Code à l'entrée.
@@ -300,7 +300,7 @@ function RSVPSection() {
       mt-4
       text-sm
       leading-relaxed
-      text-[#8A7565]
+      text-[#51677f]
     "
                   >
                     Pour toute modification,
@@ -314,7 +314,7 @@ function RSVPSection() {
                   className="
     mt-6
     rounded-xl
-    bg-[#5C4033]
+    bg-[#D4AF37]
     px-6
     py-3
     text-white
@@ -333,9 +333,10 @@ function RSVPSection() {
             onSubmit={handleSubmit}
             className="
               rounded-[2rem]
-              bg-[#FFF9F2]
+              border
+              border-[#D4AF37]/20
               p-8
-              shadow-lg
+              shadow-[0_20px_60px_rgba(0,0,0,.35)]
             "
           >
 
@@ -347,7 +348,8 @@ function RSVPSection() {
                 className="
                   mb-2
                   block
-                  text-[#5C4033]
+                  text-[#F8F6F2]
+                  tracking-wide
                 "
               >
                 Nom complet *
@@ -362,13 +364,18 @@ function RSVPSection() {
                 placeholder="Votre nom complet"
                 className="
                   w-full
-                  rounded-xl
+                  rounded-2xl
                   border
-                  border-[#D8C4B6]
+                  border-[#D4AF37]/20
                   px-4
                   py-3
+                  text-[#F8F6F2]
+                  transition-all
                   outline-none
-                  focus:border-[#C9A86A]
+                  shadow-[0_20px_30px_rgba(0,0,0,.25)]
+                  placeholder:text-[#A7B5C8]
+                  focus:border-[#D4AF37]
+                  focus:bg-white/[0.05]
                 "
               />
 
@@ -382,7 +389,8 @@ function RSVPSection() {
                 className="
                   mb-2
                   block
-                  text-[#5C4033]
+                  text-[#F8F6F2]
+                  tracking-wide
                 "
               >
                 Téléphone *
@@ -397,13 +405,18 @@ function RSVPSection() {
                 placeholder="0..."
                 className="
                   w-full
-                  rounded-xl
+                  rounded-2xl
                   border
-                  border-[#D8C4B6]
+                  border-[#D4AF37]/20
                   px-4
                   py-3
+                  text-[#F8F6F2]
+                  transition-all
                   outline-none
-                  focus:border-[#C9A86A]
+                  shadow-[0_20px_30px_rgba(0,0,0,.25)]
+                  placeholder:text-[#A7B5C8]
+                  focus:border-[#D4AF37]
+                  focus:bg-white/[0.05]
                 "
               />
 
@@ -416,7 +429,8 @@ function RSVPSection() {
               <p
                 className="
                   mb-4
-                  text-[#5C4033]
+                  text-[#F8F6F2]
+                  tracking-wide
                 "
               >
                 Serez-vous présent ?
@@ -434,22 +448,24 @@ function RSVPSection() {
                     items-center
                     justify-center
                     gap-3
+                    text-[#F8F6F2]
                     rounded-xl
                     border
                     px-4
                     py-4
                     transition-all
                     duration-300
+                    shadow-[0_20px_30px_rgba(0,0,0,.25)]
 
                     ${attendance === "accepted"
-                      ? "border-[#C9A86A] bg-[#F5EBDD]"
-                      : "border-[#D8C4B6]"
+                      ? "border-[#D4AF37] bg-[#D4AF37]/10"
+                      : "border-[#D4AF37]/20 hover:border-[#D4AF37]/40"
                     }
                   `}
                 >
                   <Sparkles
                     size={18}
-                    className="text-[#C9A86A]"
+                    className="text-[#D4AF37]"
                   />
 
                   <span>
@@ -466,16 +482,18 @@ function RSVPSection() {
                     flex
                     items-center
                     justify-center
+                    text-[#F8F6F2]
                     rounded-xl
                     border
                     px-4
                     py-4
                     transition-all
                     duration-300
+                    shadow-[0_20px_30px_rgba(0,0,0,.25)]
 
                     ${attendance === "declined"
-                      ? "border-[#C9A86A] bg-[#F5EBDD]"
-                      : "border-[#D8C4B6]"
+                      ? "border-[#D4AF37] bg-[#D4AF37]/10"
+                      : "border-[#D4AF37]/20 hover:border-[#D4AF37]/40"
                     }
                   `}
                 >
@@ -494,7 +512,8 @@ function RSVPSection() {
                 className="
                   mb-2
                   block
-                  text-[#5C4033]
+                  text-[#F8F6F2]
+                  tracking-wide
                 "
               >
                 Message aux mariés
@@ -509,13 +528,18 @@ function RSVPSection() {
                 placeholder="Partagez vos vœux..."
                 className="
                   w-full
-                  rounded-xl
+                  rounded-2xl
                   border
-                  border-[#D8C4B6]
+                  border-[#D4AF37]/20
                   px-4
                   py-3
+                  text-[#F8F6F2]
+                  transition-all
                   outline-none
-                  focus:border-[#C9A86A]
+                  shadow-[0_20px_30px_rgba(0,0,0,.25)]
+                  placeholder:text-[#A7B5C8]
+                  focus:border-[#D4AF37]
+                  focus:bg-white/[0.05]
                 "
               />
 
@@ -549,14 +573,16 @@ function RSVPSection() {
                 items-center
                 justify-center
                 gap-2
-                rounded-xl
-                bg-[#5C4033]
+                rounded-2xl
+                bg-[#D4AF37]
+                font-medium
                 px-6
                 py-4
-                text-white
+                text-[#081728]
                 transition
                 hover:opacity-90
                 disabled:opacity-50
+                hover:scale-[1.01]
               "
             >
               <Send size={18} />

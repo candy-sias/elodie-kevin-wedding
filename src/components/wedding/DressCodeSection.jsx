@@ -1,20 +1,20 @@
 function DressCodeSection() {
     const colors = [
         {
-            name: "Beige",
-            color: "#E8D8C6",
+            name: "Navy",
+            color: "#0B1F3A",
         },
         {
-            name: "Chocolat",
-            color: "#5C4033",
+            name: "Bleu minuit",
+            color: "#191970",
         },
         {
-            name: "Crème",
-            color: "#FFF9F2",
+            name: "Bleu royal",
+            color: "#1E3A8A",
         },
         {
-            name: "Terracotta",
-            color: "#C07A59",
+            name: "Champagne",
+            color: "#E9D8A6",
         }
     ];
 
@@ -23,7 +23,7 @@ function DressCodeSection() {
             <div className="mx-auto max-w-[768px]">
                 {/* Header */}
 
-                <h2 className="text-3xl text-[#5C4033] mb-10 text-center">
+                <h2 className="text-3xl text-[#F8F6F2] mb-10 text-center">
                     Code Vestimentaire
                 </h2>
 
@@ -32,20 +32,23 @@ function DressCodeSection() {
                 <div
                     className="
                 rounded-[2rem]
-                bg-[#FFF9F2]
+                bg-white/10
                 p-8
+                border
+                border-[#D4AF37]/20
                 shadow-md
                 text-center
+                shadow-[0_20px_60px_rgba(0,0,0,.35)]
                 "
                 >
                     <h3
                         className="
                     text-2xl
-                    text-[#5C4033]
+                    text-[#F8F6F2]
                     mb-4
                     "
                     >
-                        Champêtre Élégant
+                        Bleu & Élégance
                     </h3>
 
                     {/* Palette */}
@@ -86,7 +89,7 @@ function DressCodeSection() {
                                 <span
                                     className="
                     text-sm
-                    text-[#6D5545]
+                    text-[#E9D8A6]
                   "
                                 >
                                     {item.name}

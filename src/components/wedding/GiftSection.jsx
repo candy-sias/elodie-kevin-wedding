@@ -1,4 +1,4 @@
-import { Heart, Gift } from "lucide-react";
+import { Heart, Gift, HeartHandshake } from "lucide-react";
 
 function GiftSection() {
     return (
@@ -6,7 +6,7 @@ function GiftSection() {
             <div className="mx-auto max-w-[768px]">
                 {/* Header */}
 
-                <h2 className="text-3xl text-[#5C4033] mb-10 text-center">
+                <h2 className="text-3xl text-[#F8F6F2] mb-10 text-center">
                     Cadeaux
                 </h2>
 
@@ -15,9 +15,11 @@ function GiftSection() {
                 <div
                     className="
             rounded-[2rem]
-            bg-[#FFF9F2]
             p-8
-            shadow-md
+            border
+          border-[#D4AF37]/20
+            backdrop-blur-sm
+            shadow-[0_20px_60px_rgba(0,0,0,.35)]
             text-center
           "
                 >
@@ -28,9 +30,9 @@ function GiftSection() {
               justify-center
             "
                     >
-                        <Gift
-                            size={42}
-                            className="text-[#C9A86A]"
+                        <HeartHandshake
+                            size={34}
+                            className="text-[#D4AF37]"
                         />
                     </div>
 
@@ -38,19 +40,26 @@ function GiftSection() {
                         className="
               mb-6
               leading-relaxed
-              text-[#6D5545]
+              font-semibold
+              text-[#D7DDE8]
             "
                     >
                         Votre présence à nos côtés sera
                         notre plus beau cadeau.
                     </p>
 
-                    <p
-                        className="
-              leading-relaxed
-              text-[#6D5545]
-            "
-                    >
+                    <div className="
+                        mx-auto
+                        my-8
+                        h-px
+                        w-28
+                        bg-gradient-to-r
+                        from-transparent
+                        via-[#D4AF37]
+                        to-transparent
+                    "/>
+
+                    <p className="leading-relaxed text-[#D7DDE8]">
                         Pour celles et ceux qui souhaitent
                         nous témoigner une attention particulière,
                         une contribution libre destinée à nos projets
@@ -66,7 +75,7 @@ function GiftSection() {
                     >
                         <Heart
                             size={20}
-                            className="text-[#C9A86A]"
+                            className="text-[#D4AF37]"
                         />
                     </div>
                 </div>
