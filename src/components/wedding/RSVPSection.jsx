@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from "react";
 import { Heart, Send, Sparkles } from "lucide-react";
 import { QRCode } from "react-qr-code";
 import { toPng } from "html-to-image";
-import Rings from "./Rings";
 
 
 function RSVPSection() {
@@ -95,10 +94,10 @@ function RSVPSection() {
 
       setGuest(data);
 
-      /*localStorage.setItem(
+      localStorage.setItem(
         "wedding_guest",
         JSON.stringify(data)
-      );*/
+      );
 
       setSuccess(true);
 
@@ -118,7 +117,7 @@ function RSVPSection() {
   }
 
 
-  /*useEffect(() => {
+  useEffect(() => {
     const savedGuest =
       localStorage.getItem("wedding_guest");
 
@@ -129,7 +128,7 @@ function RSVPSection() {
 
     setGuest(parsedGuest);
     setSuccess(true);
-  }, []);*/
+  }, []);
 
 
   return (
