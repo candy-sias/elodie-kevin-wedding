@@ -114,9 +114,9 @@ function RSVPSection() {
     } catch (error) {
       console.error(error);
 
-      /*setErrorMessage(
+      setErrorMessage(
         "Une erreur est survenue. Veuillez réessayer."
-      );*/
+      );
     } finally {
       setLoading(false);
     }
