@@ -88,14 +88,9 @@ function RSVPSection() {
       });
 
       if (error) {
-        if (error.code === "23505") {
-          setErrorMessage(
-            "Une réponse a déjà été enregistrée avec ce numéro."
-          );
-          return;
-        }
-
-        throw error;
+        console.error("SUPABASE ERROR:", error);
+        setErrorMessage(error.message);
+        return;
       }
 
       setGuest(data);
