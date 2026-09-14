@@ -100,10 +100,10 @@ function RSVPSection() {
 
       setGuest(data);
 
-      localStorage.setItem(
+      /*localStorage.setItem(
         "wedding_guest",
         JSON.stringify(data)
-      );
+      );*/
 
       setSuccess(true);
 
@@ -114,16 +114,16 @@ function RSVPSection() {
     } catch (error) {
       console.error(error);
 
-      setErrorMessage(
+      /*setErrorMessage(
         "Une erreur est survenue. Veuillez réessayer."
-      );
+      );*/
     } finally {
       setLoading(false);
     }
   }
 
 
-  useEffect(() => {
+  /*useEffect(() => {
     const savedGuest =
       localStorage.getItem("wedding_guest");
 
@@ -134,7 +134,7 @@ function RSVPSection() {
 
     setGuest(parsedGuest);
     setSuccess(true);
-  }, []);
+  }, []);*/
 
 
   return (
